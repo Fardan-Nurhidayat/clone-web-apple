@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color : rgba(255,255,255,0.8);
+}
+
+.navbar {
+  max-width: 785px;
+  margin: 0 auto;
+  padding: 0px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.icon-apple {
+  width: 15px;
+  height: 42px;
+}
+
+.icon-search{
+  width: 15px;
+  height: 42px;
+}
+
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica"), url('./assets/helvetica/Helvetica.ttf') format('truetype');
+}
