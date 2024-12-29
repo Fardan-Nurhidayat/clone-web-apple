@@ -18,7 +18,7 @@
 }
 
 .container {
-  max-width: 785px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -45,17 +45,29 @@
   height: 42px;
 }
 
-/* Section iPhone 15 */
-#iphone-15-black {
+/* Section IPhone */
+.iphone {
   margin-top: 46px;
   overflow: hidden;
-  background-image: url("./assets/images/hero_iphone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 580px;
 }
 
+/* Section iPhone 15 */
+#iphone-15-black {
+  background-image: url("./assets/images/hero_iphone.jpg");
+}
+
+#iphone-15-white {
+  background-image: url("./assets/images/hero_iphone_white.jpg");
+  margin-top: 20px;
+}
+#iphone-15-white p,
+#iphone-15-white h1 {
+  color: black;
+}
 .iphone-content {
   display: flex;
   color: #fff;
@@ -65,17 +77,23 @@
 }
 
 .iphone-content h1 {
-  font-size: 56px;
+  font-size: 52px;
   line-height: 1;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .iphone-content p {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1;
   font-weight: 400;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .btn {
@@ -87,6 +105,7 @@
   border-radius: 989px;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.5 ease-in-out;
 }
 
 .btn-primary {
@@ -95,9 +114,18 @@
   margin-right: 10px;
 }
 
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
 .btn-secondary {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Font Family */
