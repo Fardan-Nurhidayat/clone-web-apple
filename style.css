@@ -148,6 +148,58 @@
   margin-bottom: 18px;
 }
 
+/* Grid Section */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.grid-items-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+}
+
+.grid-items-product img {
+  margin-top: 60px;
+}
+
+.grid-items-product h5 {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.watch-nine {
+  background-image: url("/assets//images/apple_watch.jpg");
+}
+
+.watch-nine h5 {
+  color: #fff;
+}
+
+.watch-ultra {
+  background-image: url("/assets//images/apple_watch_white.jpg");
+}
+
+.watch-ultra h5 {
+  color: #000;
+}
+
+.logo-product {
+  margin-bottom: 10px;
+  height: 53px;
+  width: auto;
+}
+
 /* Font Family */
 @font-face {
   font-family: "Helvetica";
