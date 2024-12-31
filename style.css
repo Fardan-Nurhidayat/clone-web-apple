@@ -200,6 +200,48 @@
   width: auto;
 }
 
+/* Ipad */
+.ipad {
+  padding-top: 8px;
+  background-image: url("/assets/images/ipad.jpg");
+}
+
+.ipad-pro {
+  background-image: url("/assets/images/ipad_black.jpg");
+}
+
+.ipad-pro h2,
+.ipad-pro p {
+  color: #fff;
+}
+
+.product-item p {
+  margin-bottom: 18px;
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.product-item h2 {
+  margin-top: 53px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* MacBook */
+.macbook {
+  background-image: url("/assets/images/macbook_white.jpg");
+}
+.airpods {
+  background-image: url("/assets/images/airpods.jpg");
+}
+
+.airpods h2,
+.airpods p {
+  color: #fff;
+}
 /* Font Family */
 @font-face {
   font-family: "Helvetica";
