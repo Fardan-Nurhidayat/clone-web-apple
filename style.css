@@ -317,13 +317,57 @@
 }
 
 .carousel-control span {
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.44);
   height: 8px;
   width: 8px;
   border-radius: 100%;
   cursor: pointer;
 }
 
+.carousel-control .active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item.active {
+  visibility: visible;
+  z-index: 22;
+  position: relative;
+  transform: translateX(0%);
+}
+
+.carousel-item.previous {
+  visibility: visible;
+  z-index: 11;
+  cursor: pointer;
+  transform: translateX(-100%);
+}
+
+.carousel-item.next {
+  visibility: visible;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateX(100%);
+}
+
+.carousel-item.move-left {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+
+.carousel-item.move-right {
+  transform: translateX(100%);
+  visibility: visible;
+}
+
+.carousel-item.enter-left {
+  transform: translateX(0%);
+  visibility: visible;
+}
+
+.carousel-item.enter-right {
+  transform: translateX(0%);
+  visibility: visible;
+}
 /* Root */
 :root {
   --primary-color: rgb(0, 113, 227);
