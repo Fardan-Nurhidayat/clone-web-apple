@@ -159,7 +159,6 @@
 }
 
 /* Grid Section */
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -425,4 +424,41 @@ footer ul {
 /* Root */
 :root {
   --primary-color: rgb(0, 113, 227);
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar-toggle svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0px 16px;
+  }
+  .navbar {
+    padding: 0px 16px;
+  }
+  .navbar a {
+    font-size: 14px;
+  }
+  .navbar-menu {
+    display: flex;
+    gap: 12px;
+  }
 }
