@@ -88,3 +88,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   setClasses(0);
 });
+
+// Toggle Menu
+const showMenu = document.querySelector(".navbar-toggle");
+const menu = document.querySelector(".navbar-mobile");
+const closeToggle = document.querySelector(".close-toggle");
+
+if (showMenu && menu && closeToggle) {
+  showMenu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+}

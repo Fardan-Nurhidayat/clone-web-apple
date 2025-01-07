@@ -15,6 +15,7 @@
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.8);
+  z-index: 30;
 }
 
 .container {
@@ -428,7 +429,7 @@ footer ul {
 
 /* Media Queries */
 @media screen and (max-width: 920px) {
-  .navbar-mobile {
+  .menu-mobile {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -442,6 +443,44 @@ footer ul {
     cursor: pointer;
   }
   .navbar-toggle svg {
+    height: 24px;
+    width: 24px;
+  }
+  .navbar-mobile {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    padding: 48px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+  }
+
+  /* when active  */
+  .navbar-mobile.active {
+    display: flex;
+  }
+
+  .navbar-mobile a {
+    color: #000;
+    text-decoration: none;
+    font-size: 28px;
+  }
+
+  .close-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  .icon-mark {
     height: 24px;
     width: 24px;
   }
