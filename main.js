@@ -62,16 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }
   function goToNextSlide() {
-    const nextIndex = (currentIndex + 1) % items.length;
+    const nextIndex = (currentIndex - 1 + items.length) % items.length;
     showSlide(nextIndex);
   }
   function goToPrevSlide() {
-    const prevIndex = (currentIndex - 1 + items.length) % items.length;
+    const prevIndex = (currentIndex + 1) % items.length;
     showSlide(prevIndex);
   }
   controls.forEach(control => {
     control.addEventListener("click", () => {
-      const index = parseInt(controls.getAttribute("data-index"));
+      const index = parseInt(control.getAttribute("data-index"));
       if (!isNaN(index)) {
         showSlide(index);
       }
@@ -102,5 +102,20 @@ if (showMenu && menu && closeToggle) {
 
   closeToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
+  });
+}
+
+// Accordion
+// let accordion = document.querySelectorAll(".accordion");
+let accordion = document.getElementsByClassName("accordion");
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
   });
 }

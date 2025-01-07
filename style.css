@@ -484,6 +484,105 @@ footer ul {
     height: 24px;
     width: 24px;
   }
+
+  /* Product */
+  .product-content h1 {
+    font-size: 48px;
+  }
+
+  /* Carousel */
+  .carousel {
+    height: 368px;
+  }
+
+  .carousel-content {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .carousel-content p {
+    font-size: 16px;
+  }
+
+  .btn-white {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 14px 16px;
+  }
+
+  .list-footer {
+    display: none;
+  }
+
+  /* Accordion */
+  .accordion {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    background: transparent;
+    padding: 18px 0px 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .accordion::after {
+    content: url('data:image/svg+xml;utf,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" /></svg>');
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%);
+  }
+
+  .accordion.active::after {
+    content: url('data:image/svg+xml;utf,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>');
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel ul {
+    display: block;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel li {
+    list-style: none;
+    padding: 12px 0px 0px 12px;
+  }
+
+  .retailer {
+    padding-top: 20px;
+  }
+
+  .list-copyright {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .list-copyright .copyright {
+    order: 2;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .list-copyright .country {
+    order: 1;
+  }
+  .list-copyright .law {
+    order: 3;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -498,6 +597,13 @@ footer ul {
   }
   .navbar-menu {
     display: flex;
+    gap: 12px;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+  .list-accordion {
+    display: none;
     gap: 12px;
   }
 }
