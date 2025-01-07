@@ -102,6 +102,7 @@ if (showMenu && menu && closeToggle) {
 
   closeToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
+    document.body.style.overflow = "auto";
   });
 }
 
